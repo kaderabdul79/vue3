@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 100px;
+    align-items: center;
+    background-color: teal;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: tomato;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.navbar a:hover{
+   color: goldenrod;
+}
