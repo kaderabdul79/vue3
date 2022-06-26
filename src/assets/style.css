@@ -29,6 +29,15 @@
     text-transform: uppercase;
     transition: 0.3s;
 }
+.navbar a i{
+margin-right: 7px;
+color: black;
+font-size: 15px;
+}
 .navbar a:hover{
    color: goldenrod;
+}
+/* routerview */
+.routerview{
+    padding: 10px 100px;
 }
