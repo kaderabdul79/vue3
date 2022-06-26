@@ -2,21 +2,33 @@
   <div id="wrapper">
     <div class="logo">A.Kader</div>
     <div class="navbar">
-        <!-- <a href="">About</a>
-        <a href="">About</a>
-        <a href="">About</a>
-        <a href="">About</a> -->
-        <router-link to="/">Home</router-link>
-        <!-- <router-link to="/">Facts</router-link> -->
-        <router-link to="/about">About</router-link>
-        <router-link to="/"><i class="fas fa-plus"></i>Add Board</router-link>
+        <router-link v-for="(link,index) of links" :to="link.path" :key="index" :class="{active: link.path == $route.path}">{{link.name}}</router-link>
+        <button><i class="fas fa-plus"></i>Add Board</button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name:'NavbarApp'
+    name:'NavbarApp',
+    data(){
+      return {
+        links:[
+          {
+            name:'home',
+            path:'/'
+          },
+          {
+            name:'about',
+            path:'/about'
+          },
+          {
+            name:'facts',
+            path:'/facts'
+          },
+        ]
+      }
+    }
 }
 </script>
 

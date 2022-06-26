@@ -29,12 +29,19 @@
     text-transform: uppercase;
     transition: 0.3s;
 }
-.navbar a i{
-margin-right: 7px;
-color: black;
-font-size: 15px;
+.navbar button{
+padding: 5px 12px;
+outline: 0;
+border: 0;
+transition: 0.5s;
 }
-.navbar a:hover{
+.navbar button i{
+    margin-right: 5px;
+}
+.navbar button:hover{
+    background-color: tomato;
+}
+.navbar a:hover,.navbar a.active{
    color: goldenrod;
 }
 /* routerview */
